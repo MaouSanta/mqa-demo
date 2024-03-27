@@ -162,7 +162,7 @@ export default function About() {
                     <Divider my="xl" w={'100%'}/>
                     <Container className="wrap">
                         <Title className={'about-title'}>Results</Title>
-                        <Carousel slideSize="70%" slideGap="xl" loop>
+                        <Carousel slideGap="xl" loop w={'800px'}>
                             <Carousel.Slide><Image src={image_1}/></Carousel.Slide>
                             <Carousel.Slide><Image src={image_2}/></Carousel.Slide>
                             <Carousel.Slide><Image src={image_3}/></Carousel.Slide>
