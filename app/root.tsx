@@ -1,10 +1,18 @@
+import "@mantine/core/styles.css";
+import '@mantine/dropzone/styles.css';
+import '@mantine/notifications/styles.css';
+import '@mantine/carousel/styles.css';
+
 import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
+    Links,
+    Meta,
+    Outlet,
+    Scripts,
+    ScrollRestoration,
 } from "@remix-run/react";
+import {ColorSchemeScript, MantineProvider} from "@mantine/core";
+import {ModalsProvider} from "@mantine/modals";
+import {Notifications} from "@mantine/notifications";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -15,6 +23,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <Meta />
         <Links />
+        <ColorSchemeScript/>
       </head>
       <body>
         {children}
@@ -26,7 +35,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+      <MantineProvider>
+          <ModalsProvider>
+              <Notifications/>
+              <Outlet/>
+          </ModalsProvider>
+      </MantineProvider>
+  );
 }
 
 export function HydrateFallback() {

@@ -1,0 +1,23 @@
+.about-title {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: Google Sans, sans-serif;
+    line-height: 1.125;
+    color: var(--mantine-color-gray-8);
+}
+
+.about-text {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(74, 74, 74);
+}
+
+.about-anchor {
+    color: var(--mantine-color-anchor)
+}
+
+.wrap {
+    max-width: 900px;
+}
