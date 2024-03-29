@@ -21,11 +21,9 @@ import {Carousel} from "@mantine/carousel";
 import image_overview from '~/assets/Fig2-overview_00.png';
 import {Link} from "@remix-run/react";
 
-const images = [
-    '~/assets/Fig3_5.png',
-    '~/assets/Fig4_1.jpg',
-    '~/assets/Fig4_2.jpg',
-];
+import image_1 from '~/assets/Fig3_5.png';
+import image_2 from '~/assets/Fig4_1.jpg';
+import image_3 from '~/assets/Fig4_2.jpg';
 
 const bibtexCode = `@manual{MQA,
     author    = {Mengzhao Wang and
@@ -162,11 +160,9 @@ export default function About() {
                     <Container className="wrap">
                         <Title className={'about-title'}>Results</Title>
                         <Carousel slideGap="xl" loop w={'700px'} withIndicators>
-                            {images.map((url) => (
-                                <Carousel.Slide key={url}>
-                                    <Image src={url}/>
-                                </Carousel.Slide>
-                            ))}
+                            <Carousel.Slide> <Image src={image_1}></Image> </Carousel.Slide>
+                            <Carousel.Slide> <Image src={image_2}></Image> </Carousel.Slide>
+                            <Carousel.Slide> <Image src={image_3}></Image> </Carousel.Slide>
                         </Carousel>
                     </Container>
                     <Divider my="xl" w={'100%'}/>
