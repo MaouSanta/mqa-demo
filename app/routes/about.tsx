@@ -95,7 +95,7 @@ export default function About() {
                     </Group>
                     <AspectRatio ratio={16 / 9} miw={'960'}>
                         <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/7MR_FPoObvc?si=_F99iPAGN9wLwTKr"
+                                src="https://www.youtube.com/embed/okgBstuQSwY?si=UK5ZPnfyo9_5mJ0Q"
                                 title="YouTube video player" frameBorder={0}
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
