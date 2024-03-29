@@ -22,9 +22,9 @@ import image_overview from '~/assets/Fig2-overview_00.png';
 import {Link} from "@remix-run/react";
 
 const images = [
-    'app/assets/Fig3_5.png',
-    'app/assets/Fig4_1.jpg',
-    'app/assets/Fig4_2.jpg',
+    '~/assets/Fig3_5.png',
+    '~/assets/Fig4_1.jpg',
+    '~/assets/Fig4_2.jpg',
 ];
 
 const bibtexCode = `@manual{MQA,
