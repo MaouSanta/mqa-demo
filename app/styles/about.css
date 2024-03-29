@@ -2,7 +2,7 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: 24px;
-    font-family: Google Sans, sans-serif;
+    font-family: 'Google Sans', sans-serif;
     line-height: 1.125;
     color: var(--mantine-color-gray-8);
 }
@@ -20,4 +20,16 @@
 
 .wrap {
     max-width: 900px;
+}
+
+.mantine-Carousel-indicator {
+    width: rem(12px);
+    height: rem(4px);
+    transition: width 250ms ease;
+    background-color: var(--mantine-color-gray-6);
+
+    &[data-active] {
+        width: rem(40px);
+        color: var(--mantine-color-gray-9);
+    }
 }
