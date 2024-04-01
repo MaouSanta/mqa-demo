@@ -21,27 +21,29 @@ import {Carousel} from "@mantine/carousel";
 import image_overview from '~/assets/Fig2-overview_00.png';
 import {Link} from "@remix-run/react";
 
-import image_1 from '~/assets/Fig3_5.png';
-import image_2 from '~/assets/Fig4_1.jpg';
-import image_3 from '~/assets/Fig4_2.jpg';
+import image_1 from '~/assets/result_1.jpg';
+import image_2 from '~/assets/result_2.jpg';
+import image_3 from '~/assets/result_3.jpg';
 
 const bibtexCode = `@manual{MQA,
-    author    = {Mengzhao Wang and
-        Haotian Wu and
-        Xiangyu Ke and
-        Yunjun Gao and
-        Xiaoliang Xu and
-        Lu Chen},
-    title     = {An Interactive Multi-modal Query Answering System with Retrieval-Augmented Large Language Models},
-    url       = {xxx},
-    year      = {2024}
+  author    = {Mengzhao Wang and Haotian Wu and Xiangyu Ke and Yunjun Gao and Xiaoliang Xu and Lu Chen},
+  title     = {An Interactive Multi-modal Query Answering System with Retrieval-Augmented Large Language Models},
+  url       = {https://github.com/ZJU-DAILY/MQA},
+  year      = {2024}
 }
 
-@article{MUST_ICDE2024,
-    title={Must: An effective and scalable framework for multimodal search of target modality},
-    author={Mengzhao Wang and Xiangyu Ke and Xiaoliang Xu and Lu Chen and Yunjun Gao and Pinpin Huang and Runkai Zhu},
-    journal={arXiv preprint arXiv:2312.06397},
-    year={2023}
+@inproceedings{MUST_ICDE24,
+title={{MUST}: An Effective and Scalable Framework for Multimodal Search of Target Modality},
+author={Mengzhao Wang and Xiangyu Ke and Xiaoliang Xu and Lu Chen and Yunjun Gao and Pinpin Huang and Runkai Zhu},
+booktitle={IEEE International Conference on Data Engineering (ICDE)},
+year={2024}
+}
+
+@manual{MVG_VLDB2024,
+  author    = {Mengzhao Wang and Xiangyu Ke and Lu Chen and Yunjun Gao},
+  title     = {MVG Index: Empowering Multi-Vector Similarity Search in High-Dimensional Spaces},
+  url       = {https://github.com/ZJU-DAILY/MVG/blob/main/MVG_technical_report.pdf},
+  year      = {2024}
 }`
 
 
@@ -79,7 +81,7 @@ export default function About() {
                         Hangzhou, China
                     </Text>
                     <Group align={'center'} justify={'center'} pt={'12px'} pb={'60px'} gap="xs">
-                        <Link to={'https://github.com/ZJU-DAILY/MQA'}>
+                        <Link to={'https://arxiv.org/pdf/2312.06397.pdf'}>
                             <Button variant="filled" color="rgb(74, 74, 74)" radius="xl" size={'md'}
                                     leftSection={<FaFilePdf/>}>Paper</Button>
                         </Link>
@@ -116,15 +118,15 @@ export default function About() {
                         <Title className={'about-title'}>Architecture Overview</Title>
                         <Text className={'about-text'} ta="justify" size="lg">
                             <Image src={image_overview}
-                                   w={'575px'}
-                                   h={'auto'}
-                                   style={{
-                                       margin: "0 auto",
-                                       display: "block",
-                                       float: "right", // make image float at left
-                                       clear: "both", // prevent text hit the image
-                                       padding: "10px 0 0 10px"
-                                   }}
+                                   // w={'575px'}
+                                   // h={'auto'}
+                                   // style={{
+                                   //     margin: "0 auto",
+                                   //     display: "block",
+                                   //     float: "right", // make image float at left
+                                   //     clear: "both", // prevent text hit the image
+                                   //     padding: "10px 0 0 10px"
+                                   // }}
                             />
                             Explore the MQA architecture: a streamlined, user-friendly system designed for sophisticated
                             multi-modal
